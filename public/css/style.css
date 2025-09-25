@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #004d40;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+.livro-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s;
+}
+.livro-card:hover {
+    transform: translateY(-5px);
+}
+.livro-card h3 {
+    margin-top: 0;
+    color: #004d40;
+}
+.livro-card p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+.livro-card span {
+    font-weight: bold;
+}
+
+
+.container-cadastro {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.container-cadastro h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+#form-cadastro {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas */
+    gap: 1rem; /* Espaçamento entre os campos */
+}
+
+#form-cadastro input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Garante que o padding não afete a largura */
+}
+
+#form-cadastro button {
+    grid-column: 1 / -1; /* O botão ocupa as duas colunas */
+    padding: 1rem;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#form-cadastro button:hover {
+    background-color: #00796b;
+}
+
+#mensagem-status {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border-radius: 4px;
+    display: none; /* Começa escondido */
+}
+
+#mensagem-status.sucesso {
+    background-color: #d4edda;
+    color: #155724;
+    display: block;
+}
+
+#mensagem-status.erro {
+    background-color: #f8d7da;
+    color: #721c24;
+    display: block;
+}
+
+
+/* --- ESTILO PARA O BOTÃO DE DELETAR --- */
+
+.btn-deletar {
+    background-color: #c82333; /* Um tom de vermelho para indicar perigo/deleção */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem; /* Espaço entre os detalhes do livro e o botão */
+    width: 100%;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.btn-deletar:hover {
+    background-color: #a71d2a;
+}

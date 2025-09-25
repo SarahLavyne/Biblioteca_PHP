@@ -1,0 +1,17 @@
+-- Script para MySQL
+CREATE TABLE livros (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(255) NOT NULL,
+    autor VARCHAR(255) NOT NULL,
+    ano_publicacao INT,
+    genero VARCHAR(100),
+    disponivel BOOLEAN DEFAULT TRUE
+);
+
+-- Os dados de inserção são os mesmos
+INSERT INTO livros (titulo, autor, ano_publicacao, genero) VALUES
+('O Senhor dos Anéis', 'J.R.R. Tolkien', 1954, 'Fantasia'),
+('1984', 'George Orwell', 1949, 'Ficção Distópica'),
+('Dom Quixote', 'Miguel de Cervantes', 1605, 'Romance'),
+('A Arte da Guerra', 'Sun Tzu', -500, 'Estratégia'),
+('O Guia do Mochileiro das Galáxias', 'Douglas Adams', 1979, 'Ficção Científica');

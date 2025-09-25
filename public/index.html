@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Biblioteca Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+</head><body>
+    <header>
+        <h1>Minha Biblioteca Digital</h1>
+        <p>Um catálogo de livros usando o Padrão de Projeto Iterator</p>
+    </header>
+
+    <section class="container-cadastro">
+        <h2>Cadastrar Novo Livro</h2>
+        <form id="form-cadastro">
+            <input type="text" id="titulo" name="titulo" placeholder="Título do Livro" required>
+            <input type="text" id="autor" name="autor" placeholder="Autor" required>
+            <input type="number" id="ano" name="ano_publicacao" placeholder="Ano de Publicação">
+            <input type="text" id="genero" name="genero" placeholder="Gênero">
+            <button type="submit">Cadastrar Livro</button>
+        </form>
+        <div id="mensagem-status"></div>
+    </section>
+    
+    <main>
+        <div id="lista-livros" class="container">
+            </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
